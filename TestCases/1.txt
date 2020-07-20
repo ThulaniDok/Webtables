@@ -1,0 +1,23 @@
+*** Variables ***
+${AUTOMATION URL}      http://www.way2automation.com/angularjs-protractor/webtables/
+
+*** Test Cases ***
+FillOutFormsTest
+    Open browser    ${AUTOMATION URL}  chrome
+    Home Page Should Be Open
+    Maximize Browser Window
+    Set Browser Implicit Wait    2s
+    Capture page screenshot     ../Screenshots/LandingPage.png
+    Add New User
+    Input text  name:FirstName    Thulani
+    Input text  name:LastName   Gawe
+    Input text  name:UserName   Dok
+    Input text  name:Password   Password123
+    Select radio button     optionsRadios   16
+    Select from list by value   RoleId  1
+    Input text  name:Email  email@example.com
+    Input text  name:Mobilephone  0735322521
+    Click element    xpath:/html/body/div[3]/div[3]/button[2]
+    Set Browser Implicit Wait    2s
+    Capture page screenshot     ../Screenshots/Completed.png
+    [Teardown]    Close Browser

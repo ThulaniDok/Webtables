@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200720 19:04:49.741" generator="Robot 3.2.1 (Python 2.7.12 on linux2)">
+<suite source="/home/thulanig/PersonalDev/Python/AbsaTask1/TestCases/TC2.robot" id="s1" name="TC2">
+<kw type="setup" name="Open Chrome Browser" library="form_resources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${FORM URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:50.251" level="INFO">Opening browser 'chrome' to base url 'http://www.way2automation.com/angularjs-protractor/webtables/'.</msg>
+<msg timestamp="20200720 19:04:51.877" level="INFO">Starting new HTTP connection (1): 127.0.0.1</msg>
+<status status="PASS" endtime="20200720 19:04:54.135" starttime="20200720 19:04:50.251"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200720 19:04:54.240" starttime="20200720 19:04:54.135"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:54.240" starttime="20200720 19:04:50.250"></status>
+</kw>
+<test id="s1-t1" name="Add User 1">
+<kw name="Add User To List">
+<arguments>
+<arg>FName1</arg>
+<arg>LName1</arg>
+<arg>User1</arg>
+<arg>Pass1</arg>
+<arg>15</arg>
+<arg>2</arg>
+<arg>admin@mail.com</arg>
+<arg>82555</arg>
+</arguments>
+<kw name="Home Page Should Be Open" library="form_resources">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Protractor practice website - WebTables</arg>
+</arguments>
+<msg timestamp="20200720 19:04:54.251" level="INFO">Page title is 'Protractor practice website - WebTables'.</msg>
+<status status="PASS" endtime="20200720 19:04:54.251" starttime="20200720 19:04:54.242"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:54.251" starttime="20200720 19:04:54.242"></status>
+</kw>
+<kw name="Add New User" library="form_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/table/thead/tr[2]/td/button</arg>
+</arguments>
+<msg timestamp="20200720 19:04:54.252" level="INFO">Clicking element 'xpath:/html/body/table/thead/tr[2]/td/button'.</msg>
+<status status="PASS" endtime="20200720 19:04:54.388" starttime="20200720 19:04:54.252"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:54.388" starttime="20200720 19:04:54.251"></status>
+</kw>
+<kw name="Input First Name" library="form_resources">
+<arguments>
+<arg>${FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:FirstName</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:54.389" level="INFO">Typing text 'FName1' into text field 'name:FirstName'.</msg>
+<status status="PASS" endtime="20200720 19:04:54.596" starttime="20200720 19:04:54.389"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:54.597" starttime="20200720 19:04:54.388"></status>
+</kw>
+<kw name="Input Last Name" library="form_resources">
+<arguments>
+<arg>${LastName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:LastName</arg>
+<arg>${LastName}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:54.598" level="INFO">Typing text 'LName1' into text field 'name:LastName'.</msg>
+<status status="PASS" endtime="20200720 19:04:54.791" starttime="20200720 19:04:54.597"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:54.791" starttime="20200720 19:04:54.597"></status>
+</kw>
+<kw name="Input User Name" library="form_resources">
+<arguments>
+<arg>${UserName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:UserName</arg>
+<arg>${UserName}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:54.792" level="INFO">Typing text 'User1' into text field 'name:UserName'.</msg>
+<status status="PASS" endtime="20200720 19:04:54.975" starttime="20200720 19:04:54.792"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:54.975" starttime="20200720 19:04:54.791"></status>
+</kw>
+<kw name="Input Password Name" library="form_resources">
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:Password</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:54.976" level="INFO">Typing text 'Pass1' into text field 'name:Password'.</msg>
+<status status="PASS" endtime="20200720 19:04:55.158" starttime="20200720 19:04:54.976"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:55.158" starttime="20200720 19:04:54.975"></status>
+</kw>
+<kw name="Input Customer" library="form_resources">
+<arguments>
+<arg>${Customer}</arg>
+</arguments>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>optionsRadios</arg>
+<arg>${Customer}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:55.159" level="INFO">Selecting '15' from radio button 'optionsRadios'.</msg>
+<status status="PASS" endtime="20200720 19:04:55.271" starttime="20200720 19:04:55.159"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:55.271" starttime="20200720 19:04:55.159"></status>
+</kw>
+<kw name="Input Role" library="form_resources">
+<arguments>
+<arg>${Role}</arg>
+</arguments>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>RoleId</arg>
+<arg>${Role}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:55.272" level="INFO">Selecting options from selection list 'RoleId' by value 2.</msg>
+<status status="PASS" endtime="20200720 19:04:55.398" starttime="20200720 19:04:55.272"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:55.398" starttime="20200720 19:04:55.272"></status>
+</kw>
+<kw name="Input Email" library="form_resources">
+<arguments>
+<arg>${Email}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:Email</arg>
+<arg>${Email}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:55.400" level="INFO">Typing text 'admin@mail.com' into text field 'name:Email'.</msg>
+<status status="PASS" endtime="20200720 19:04:55.646" starttime="20200720 19:04:55.399"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:55.646" starttime="20200720 19:04:55.399"></status>
+</kw>
+<kw name="Input Cell" library="form_resources">
+<arguments>
+<arg>${Cell}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:Mobilephone</arg>
+<arg>${Cell}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:55.648" level="INFO">Typing text '82555' into text field 'name:Mobilephone'.</msg>
+<status status="PASS" endtime="20200720 19:04:55.905" starttime="20200720 19:04:55.648"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:55.905" starttime="20200720 19:04:55.647"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<status status="PASS" endtime="20200720 19:04:55.907" starttime="20200720 19:04:55.906"></status>
+</kw>
+<kw name="Save User" library="form_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:body &gt; div.modal.ng-scope &gt; div.modal-footer &gt; button.btn.btn-success</arg>
+</arguments>
+<msg timestamp="20200720 19:04:55.908" level="INFO">Clicking element 'css:body &gt; div.modal.ng-scope &gt; div.modal-footer &gt; button.btn.btn-success'.</msg>
+<status status="PASS" endtime="20200720 19:04:56.031" starttime="20200720 19:04:55.908"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:56.032" starttime="20200720 19:04:55.907"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>../Screenshots/Completed.png</arg>
+</arguments>
+<msg timestamp="20200720 19:04:56.201" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/Completed.png"&gt;&lt;img src="../Screenshots/Completed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200720 19:04:56.202" starttime="20200720 19:04:56.032"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:56.202" starttime="20200720 19:04:54.241"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:56.202" critical="yes" starttime="20200720 19:04:54.240"></status>
+</test>
+<test id="s1-t2" name="Add User 1">
+<kw name="Add User To List">
+<arguments>
+<arg>FName2</arg>
+<arg>LName2</arg>
+<arg>User2</arg>
+<arg>Pass2</arg>
+<arg>16</arg>
+<arg>1</arg>
+<arg>customer@mail.com</arg>
+<arg>83444</arg>
+</arguments>
+<kw name="Home Page Should Be Open" library="form_resources">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Protractor practice website - WebTables</arg>
+</arguments>
+<msg timestamp="20200720 19:04:56.214" level="INFO">Page title is 'Protractor practice website - WebTables'.</msg>
+<status status="PASS" endtime="20200720 19:04:56.214" starttime="20200720 19:04:56.205"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:56.215" starttime="20200720 19:04:56.205"></status>
+</kw>
+<kw name="Add New User" library="form_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/table/thead/tr[2]/td/button</arg>
+</arguments>
+<msg timestamp="20200720 19:04:56.216" level="INFO">Clicking element 'xpath:/html/body/table/thead/tr[2]/td/button'.</msg>
+<status status="PASS" endtime="20200720 19:04:56.289" starttime="20200720 19:04:56.215"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:56.290" starttime="20200720 19:04:56.215"></status>
+</kw>
+<kw name="Input First Name" library="form_resources">
+<arguments>
+<arg>${FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:FirstName</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:56.292" level="INFO">Typing text 'FName2' into text field 'name:FirstName'.</msg>
+<status status="PASS" endtime="20200720 19:04:56.432" starttime="20200720 19:04:56.291"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:56.432" starttime="20200720 19:04:56.290"></status>
+</kw>
+<kw name="Input Last Name" library="form_resources">
+<arguments>
+<arg>${LastName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:LastName</arg>
+<arg>${LastName}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:56.434" level="INFO">Typing text 'LName2' into text field 'name:LastName'.</msg>
+<status status="PASS" endtime="20200720 19:04:56.596" starttime="20200720 19:04:56.433"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:56.596" starttime="20200720 19:04:56.433"></status>
+</kw>
+<kw name="Input User Name" library="form_resources">
+<arguments>
+<arg>${UserName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:UserName</arg>
+<arg>${UserName}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:56.598" level="INFO">Typing text 'User2' into text field 'name:UserName'.</msg>
+<status status="PASS" endtime="20200720 19:04:56.746" starttime="20200720 19:04:56.598"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:56.746" starttime="20200720 19:04:56.597"></status>
+</kw>
+<kw name="Input Password Name" library="form_resources">
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:Password</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:56.747" level="INFO">Typing text 'Pass2' into text field 'name:Password'.</msg>
+<status status="PASS" endtime="20200720 19:04:56.903" starttime="20200720 19:04:56.747"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:56.904" starttime="20200720 19:04:56.746"></status>
+</kw>
+<kw name="Input Customer" library="form_resources">
+<arguments>
+<arg>${Customer}</arg>
+</arguments>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>optionsRadios</arg>
+<arg>${Customer}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:56.905" level="INFO">Selecting '16' from radio button 'optionsRadios'.</msg>
+<status status="PASS" endtime="20200720 19:04:57.007" starttime="20200720 19:04:56.904"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:57.007" starttime="20200720 19:04:56.904"></status>
+</kw>
+<kw name="Input Role" library="form_resources">
+<arguments>
+<arg>${Role}</arg>
+</arguments>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>RoleId</arg>
+<arg>${Role}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:57.009" level="INFO">Selecting options from selection list 'RoleId' by value 1.</msg>
+<status status="PASS" endtime="20200720 19:04:57.098" starttime="20200720 19:04:57.008"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:57.098" starttime="20200720 19:04:57.008"></status>
+</kw>
+<kw name="Input Email" library="form_resources">
+<arguments>
+<arg>${Email}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:Email</arg>
+<arg>${Email}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:57.099" level="INFO">Typing text 'customer@mail.com' into text field 'name:Email'.</msg>
+<status status="PASS" endtime="20200720 19:04:57.369" starttime="20200720 19:04:57.099"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:57.369" starttime="20200720 19:04:57.098"></status>
+</kw>
+<kw name="Input Cell" library="form_resources">
+<arguments>
+<arg>${Cell}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:Mobilephone</arg>
+<arg>${Cell}</arg>
+</arguments>
+<msg timestamp="20200720 19:04:57.371" level="INFO">Typing text '83444' into text field 'name:Mobilephone'.</msg>
+<status status="PASS" endtime="20200720 19:04:57.578" starttime="20200720 19:04:57.370"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:57.578" starttime="20200720 19:04:57.369"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<status status="PASS" endtime="20200720 19:04:57.581" starttime="20200720 19:04:57.578"></status>
+</kw>
+<kw name="Save User" library="form_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:body &gt; div.modal.ng-scope &gt; div.modal-footer &gt; button.btn.btn-success</arg>
+</arguments>
+<msg timestamp="20200720 19:04:57.582" level="INFO">Clicking element 'css:body &gt; div.modal.ng-scope &gt; div.modal-footer &gt; button.btn.btn-success'.</msg>
+<status status="PASS" endtime="20200720 19:04:57.697" starttime="20200720 19:04:57.582"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:57.697" starttime="20200720 19:04:57.581"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>../Screenshots/Completed.png</arg>
+</arguments>
+<msg timestamp="20200720 19:04:57.863" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/Completed.png"&gt;&lt;img src="../Screenshots/Completed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200720 19:04:57.863" starttime="20200720 19:04:57.698"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:57.864" starttime="20200720 19:04:56.204"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:57.864" critical="yes" starttime="20200720 19:04:56.203"></status>
+</test>
+<kw type="teardown" name="Close Open Browser" library="form_resources">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200720 19:04:57.937" starttime="20200720 19:04:57.865"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:57.937" starttime="20200720 19:04:57.865"></status>
+</kw>
+<status status="PASS" endtime="20200720 19:04:57.937" starttime="20200720 19:04:49.743"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TC2" pass="2">TC2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200720 19:04:56.203" level="WARN">Multiple test cases with name 'Add User 1' executed in test suite 'TC2'.</msg>
+</errors>
+</robot>
