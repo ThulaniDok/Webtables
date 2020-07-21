@@ -1,7 +1,7 @@
 *** Settings ***
 Library     SeleniumLibrary
 Resource    ../Resources/form_resources.robot
-Library     DataDriver     user_details.csv
+Library     DataDriver     ../TestData/user_details.csv
 
 
 Suite Setup     Open Chrome Browser

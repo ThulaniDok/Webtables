@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200720 19:04:49.741" generator="Robot 3.2.1 (Python 2.7.12 on linux2)">
-<suite source="/home/thulanig/PersonalDev/Python/AbsaTask1/TestCases/TC2.robot" id="s1" name="TC2">
+<robot rpa="false" generated="20200721 13:56:23.464" generator="Robot 3.2.1 (Python 2.7.12 on linux2)">
+<suite source="/home/thulanig/PersonalDev/Python/AbsaTask1/TestCases/TC2_AddUserWithCSV.robot" id="s1" name="TC2 AddUserWithCSV">
 <kw type="setup" name="Open Chrome Browser" library="form_resources">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -8,15 +8,15 @@
 <arg>${FORM URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:50.251" level="INFO">Opening browser 'chrome' to base url 'http://www.way2automation.com/angularjs-protractor/webtables/'.</msg>
-<msg timestamp="20200720 19:04:51.877" level="INFO">Starting new HTTP connection (1): 127.0.0.1</msg>
-<status status="PASS" endtime="20200720 19:04:54.135" starttime="20200720 19:04:50.251"></status>
+<msg timestamp="20200721 13:56:24.209" level="INFO">Opening browser 'chrome' to base url 'http://www.way2automation.com/angularjs-protractor/webtables/'.</msg>
+<msg timestamp="20200721 13:56:25.878" level="INFO">Starting new HTTP connection (1): 127.0.0.1</msg>
+<status status="PASS" endtime="20200721 13:56:31.482" starttime="20200721 13:56:24.209"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20200720 19:04:54.240" starttime="20200720 19:04:54.135"></status>
+<status status="PASS" endtime="20200721 13:56:31.593" starttime="20200721 13:56:31.482"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:54.240" starttime="20200720 19:04:50.250"></status>
+<status status="PASS" endtime="20200721 13:56:31.594" starttime="20200721 13:56:24.208"></status>
 </kw>
 <test id="s1-t1" name="Add User 1">
 <kw name="Add User To List">
@@ -36,10 +36,10 @@
 <arguments>
 <arg>Protractor practice website - WebTables</arg>
 </arguments>
-<msg timestamp="20200720 19:04:54.251" level="INFO">Page title is 'Protractor practice website - WebTables'.</msg>
-<status status="PASS" endtime="20200720 19:04:54.251" starttime="20200720 19:04:54.242"></status>
+<msg timestamp="20200721 13:56:31.611" level="INFO">Page title is 'Protractor practice website - WebTables'.</msg>
+<status status="PASS" endtime="20200721 13:56:31.612" starttime="20200721 13:56:31.597"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:54.251" starttime="20200720 19:04:54.242"></status>
+<status status="PASS" endtime="20200721 13:56:31.612" starttime="20200721 13:56:31.596"></status>
 </kw>
 <kw name="Add New User" library="form_resources">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -47,10 +47,10 @@
 <arguments>
 <arg>xpath:/html/body/table/thead/tr[2]/td/button</arg>
 </arguments>
-<msg timestamp="20200720 19:04:54.252" level="INFO">Clicking element 'xpath:/html/body/table/thead/tr[2]/td/button'.</msg>
-<status status="PASS" endtime="20200720 19:04:54.388" starttime="20200720 19:04:54.252"></status>
+<msg timestamp="20200721 13:56:31.612" level="INFO">Clicking element 'xpath:/html/body/table/thead/tr[2]/td/button'.</msg>
+<status status="PASS" endtime="20200721 13:56:31.722" starttime="20200721 13:56:31.612"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:54.388" starttime="20200720 19:04:54.251"></status>
+<status status="PASS" endtime="20200721 13:56:31.722" starttime="20200721 13:56:31.612"></status>
 </kw>
 <kw name="Input First Name" library="form_resources">
 <arguments>
@@ -62,10 +62,10 @@
 <arg>name:FirstName</arg>
 <arg>${FirstName}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:54.389" level="INFO">Typing text 'FName1' into text field 'name:FirstName'.</msg>
-<status status="PASS" endtime="20200720 19:04:54.596" starttime="20200720 19:04:54.389"></status>
+<msg timestamp="20200721 13:56:31.724" level="INFO">Typing text 'FName1' into text field 'name:FirstName'.</msg>
+<status status="PASS" endtime="20200721 13:56:31.920" starttime="20200721 13:56:31.723"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:54.597" starttime="20200720 19:04:54.388"></status>
+<status status="PASS" endtime="20200721 13:56:31.921" starttime="20200721 13:56:31.722"></status>
 </kw>
 <kw name="Input Last Name" library="form_resources">
 <arguments>
@@ -77,10 +77,10 @@
 <arg>name:LastName</arg>
 <arg>${LastName}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:54.598" level="INFO">Typing text 'LName1' into text field 'name:LastName'.</msg>
-<status status="PASS" endtime="20200720 19:04:54.791" starttime="20200720 19:04:54.597"></status>
+<msg timestamp="20200721 13:56:31.922" level="INFO">Typing text 'LName1' into text field 'name:LastName'.</msg>
+<status status="PASS" endtime="20200721 13:56:32.077" starttime="20200721 13:56:31.921"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:54.791" starttime="20200720 19:04:54.597"></status>
+<status status="PASS" endtime="20200721 13:56:32.078" starttime="20200721 13:56:31.921"></status>
 </kw>
 <kw name="Input User Name" library="form_resources">
 <arguments>
@@ -92,10 +92,10 @@
 <arg>name:UserName</arg>
 <arg>${UserName}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:54.792" level="INFO">Typing text 'User1' into text field 'name:UserName'.</msg>
-<status status="PASS" endtime="20200720 19:04:54.975" starttime="20200720 19:04:54.792"></status>
+<msg timestamp="20200721 13:56:32.079" level="INFO">Typing text 'User1' into text field 'name:UserName'.</msg>
+<status status="PASS" endtime="20200721 13:56:32.246" starttime="20200721 13:56:32.078"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:54.975" starttime="20200720 19:04:54.791"></status>
+<status status="PASS" endtime="20200721 13:56:32.246" starttime="20200721 13:56:32.078"></status>
 </kw>
 <kw name="Input Password Name" library="form_resources">
 <arguments>
@@ -107,10 +107,10 @@
 <arg>name:Password</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:54.976" level="INFO">Typing text 'Pass1' into text field 'name:Password'.</msg>
-<status status="PASS" endtime="20200720 19:04:55.158" starttime="20200720 19:04:54.976"></status>
+<msg timestamp="20200721 13:56:32.247" level="INFO">Typing text 'Pass1' into text field 'name:Password'.</msg>
+<status status="PASS" endtime="20200721 13:56:32.388" starttime="20200721 13:56:32.247"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:55.158" starttime="20200720 19:04:54.975"></status>
+<status status="PASS" endtime="20200721 13:56:32.388" starttime="20200721 13:56:32.246"></status>
 </kw>
 <kw name="Input Customer" library="form_resources">
 <arguments>
@@ -122,10 +122,10 @@
 <arg>optionsRadios</arg>
 <arg>${Customer}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:55.159" level="INFO">Selecting '15' from radio button 'optionsRadios'.</msg>
-<status status="PASS" endtime="20200720 19:04:55.271" starttime="20200720 19:04:55.159"></status>
+<msg timestamp="20200721 13:56:32.390" level="INFO">Selecting '15' from radio button 'optionsRadios'.</msg>
+<status status="PASS" endtime="20200721 13:56:32.499" starttime="20200721 13:56:32.389"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:55.271" starttime="20200720 19:04:55.159"></status>
+<status status="PASS" endtime="20200721 13:56:32.499" starttime="20200721 13:56:32.388"></status>
 </kw>
 <kw name="Input Role" library="form_resources">
 <arguments>
@@ -137,10 +137,10 @@
 <arg>RoleId</arg>
 <arg>${Role}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:55.272" level="INFO">Selecting options from selection list 'RoleId' by value 2.</msg>
-<status status="PASS" endtime="20200720 19:04:55.398" starttime="20200720 19:04:55.272"></status>
+<msg timestamp="20200721 13:56:32.500" level="INFO">Selecting options from selection list 'RoleId' by value 2.</msg>
+<status status="PASS" endtime="20200721 13:56:32.620" starttime="20200721 13:56:32.500"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:55.398" starttime="20200720 19:04:55.272"></status>
+<status status="PASS" endtime="20200721 13:56:32.620" starttime="20200721 13:56:32.499"></status>
 </kw>
 <kw name="Input Email" library="form_resources">
 <arguments>
@@ -152,10 +152,10 @@
 <arg>name:Email</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:55.400" level="INFO">Typing text 'admin@mail.com' into text field 'name:Email'.</msg>
-<status status="PASS" endtime="20200720 19:04:55.646" starttime="20200720 19:04:55.399"></status>
+<msg timestamp="20200721 13:56:32.621" level="INFO">Typing text 'admin@mail.com' into text field 'name:Email'.</msg>
+<status status="PASS" endtime="20200721 13:56:32.863" starttime="20200721 13:56:32.621"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:55.646" starttime="20200720 19:04:55.399"></status>
+<status status="PASS" endtime="20200721 13:56:32.863" starttime="20200721 13:56:32.620"></status>
 </kw>
 <kw name="Input Cell" library="form_resources">
 <arguments>
@@ -167,17 +167,17 @@
 <arg>name:Mobilephone</arg>
 <arg>${Cell}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:55.648" level="INFO">Typing text '82555' into text field 'name:Mobilephone'.</msg>
-<status status="PASS" endtime="20200720 19:04:55.905" starttime="20200720 19:04:55.648"></status>
+<msg timestamp="20200721 13:56:32.864" level="INFO">Typing text '82555' into text field 'name:Mobilephone'.</msg>
+<status status="PASS" endtime="20200721 13:56:33.034" starttime="20200721 13:56:32.864"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:55.905" starttime="20200720 19:04:55.647"></status>
+<status status="PASS" endtime="20200721 13:56:33.034" starttime="20200721 13:56:32.863"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<status status="PASS" endtime="20200720 19:04:55.907" starttime="20200720 19:04:55.906"></status>
+<status status="PASS" endtime="20200721 13:56:33.036" starttime="20200721 13:56:33.034"></status>
 </kw>
 <kw name="Save User" library="form_resources">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -185,22 +185,22 @@
 <arguments>
 <arg>css:body &gt; div.modal.ng-scope &gt; div.modal-footer &gt; button.btn.btn-success</arg>
 </arguments>
-<msg timestamp="20200720 19:04:55.908" level="INFO">Clicking element 'css:body &gt; div.modal.ng-scope &gt; div.modal-footer &gt; button.btn.btn-success'.</msg>
-<status status="PASS" endtime="20200720 19:04:56.031" starttime="20200720 19:04:55.908"></status>
+<msg timestamp="20200721 13:56:33.036" level="INFO">Clicking element 'css:body &gt; div.modal.ng-scope &gt; div.modal-footer &gt; button.btn.btn-success'.</msg>
+<status status="PASS" endtime="20200721 13:56:33.136" starttime="20200721 13:56:33.036"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:56.032" starttime="20200720 19:04:55.907"></status>
+<status status="PASS" endtime="20200721 13:56:33.136" starttime="20200721 13:56:33.036"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
 <arg>../Screenshots/Completed.png</arg>
 </arguments>
-<msg timestamp="20200720 19:04:56.201" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/Completed.png"&gt;&lt;img src="../Screenshots/Completed.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20200720 19:04:56.202" starttime="20200720 19:04:56.032"></status>
+<msg timestamp="20200721 13:56:33.304" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/Completed.png"&gt;&lt;img src="../Screenshots/Completed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200721 13:56:33.305" starttime="20200721 13:56:33.136"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:56.202" starttime="20200720 19:04:54.241"></status>
+<status status="PASS" endtime="20200721 13:56:33.305" starttime="20200721 13:56:31.595"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:56.202" critical="yes" starttime="20200720 19:04:54.240"></status>
+<status status="PASS" endtime="20200721 13:56:33.305" critical="yes" starttime="20200721 13:56:31.594"></status>
 </test>
 <test id="s1-t2" name="Add User 1">
 <kw name="Add User To List">
@@ -220,10 +220,10 @@
 <arguments>
 <arg>Protractor practice website - WebTables</arg>
 </arguments>
-<msg timestamp="20200720 19:04:56.214" level="INFO">Page title is 'Protractor practice website - WebTables'.</msg>
-<status status="PASS" endtime="20200720 19:04:56.214" starttime="20200720 19:04:56.205"></status>
+<msg timestamp="20200721 13:56:33.312" level="INFO">Page title is 'Protractor practice website - WebTables'.</msg>
+<status status="PASS" endtime="20200721 13:56:33.313" starttime="20200721 13:56:33.309"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:56.215" starttime="20200720 19:04:56.205"></status>
+<status status="PASS" endtime="20200721 13:56:33.313" starttime="20200721 13:56:33.308"></status>
 </kw>
 <kw name="Add New User" library="form_resources">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -231,10 +231,10 @@
 <arguments>
 <arg>xpath:/html/body/table/thead/tr[2]/td/button</arg>
 </arguments>
-<msg timestamp="20200720 19:04:56.216" level="INFO">Clicking element 'xpath:/html/body/table/thead/tr[2]/td/button'.</msg>
-<status status="PASS" endtime="20200720 19:04:56.289" starttime="20200720 19:04:56.215"></status>
+<msg timestamp="20200721 13:56:33.314" level="INFO">Clicking element 'xpath:/html/body/table/thead/tr[2]/td/button'.</msg>
+<status status="PASS" endtime="20200721 13:56:33.376" starttime="20200721 13:56:33.314"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:56.290" starttime="20200720 19:04:56.215"></status>
+<status status="PASS" endtime="20200721 13:56:33.376" starttime="20200721 13:56:33.313"></status>
 </kw>
 <kw name="Input First Name" library="form_resources">
 <arguments>
@@ -246,10 +246,10 @@
 <arg>name:FirstName</arg>
 <arg>${FirstName}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:56.292" level="INFO">Typing text 'FName2' into text field 'name:FirstName'.</msg>
-<status status="PASS" endtime="20200720 19:04:56.432" starttime="20200720 19:04:56.291"></status>
+<msg timestamp="20200721 13:56:33.378" level="INFO">Typing text 'FName2' into text field 'name:FirstName'.</msg>
+<status status="PASS" endtime="20200721 13:56:33.518" starttime="20200721 13:56:33.377"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:56.432" starttime="20200720 19:04:56.290"></status>
+<status status="PASS" endtime="20200721 13:56:33.518" starttime="20200721 13:56:33.376"></status>
 </kw>
 <kw name="Input Last Name" library="form_resources">
 <arguments>
@@ -261,10 +261,10 @@
 <arg>name:LastName</arg>
 <arg>${LastName}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:56.434" level="INFO">Typing text 'LName2' into text field 'name:LastName'.</msg>
-<status status="PASS" endtime="20200720 19:04:56.596" starttime="20200720 19:04:56.433"></status>
+<msg timestamp="20200721 13:56:33.520" level="INFO">Typing text 'LName2' into text field 'name:LastName'.</msg>
+<status status="PASS" endtime="20200721 13:56:33.671" starttime="20200721 13:56:33.519"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:56.596" starttime="20200720 19:04:56.433"></status>
+<status status="PASS" endtime="20200721 13:56:33.672" starttime="20200721 13:56:33.518"></status>
 </kw>
 <kw name="Input User Name" library="form_resources">
 <arguments>
@@ -276,10 +276,10 @@
 <arg>name:UserName</arg>
 <arg>${UserName}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:56.598" level="INFO">Typing text 'User2' into text field 'name:UserName'.</msg>
-<status status="PASS" endtime="20200720 19:04:56.746" starttime="20200720 19:04:56.598"></status>
+<msg timestamp="20200721 13:56:33.674" level="INFO">Typing text 'User2' into text field 'name:UserName'.</msg>
+<status status="PASS" endtime="20200721 13:56:33.824" starttime="20200721 13:56:33.673"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:56.746" starttime="20200720 19:04:56.597"></status>
+<status status="PASS" endtime="20200721 13:56:33.824" starttime="20200721 13:56:33.672"></status>
 </kw>
 <kw name="Input Password Name" library="form_resources">
 <arguments>
@@ -291,10 +291,10 @@
 <arg>name:Password</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:56.747" level="INFO">Typing text 'Pass2' into text field 'name:Password'.</msg>
-<status status="PASS" endtime="20200720 19:04:56.903" starttime="20200720 19:04:56.747"></status>
+<msg timestamp="20200721 13:56:33.825" level="INFO">Typing text 'Pass2' into text field 'name:Password'.</msg>
+<status status="PASS" endtime="20200721 13:56:33.987" starttime="20200721 13:56:33.825"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:56.904" starttime="20200720 19:04:56.746"></status>
+<status status="PASS" endtime="20200721 13:56:33.987" starttime="20200721 13:56:33.824"></status>
 </kw>
 <kw name="Input Customer" library="form_resources">
 <arguments>
@@ -306,10 +306,10 @@
 <arg>optionsRadios</arg>
 <arg>${Customer}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:56.905" level="INFO">Selecting '16' from radio button 'optionsRadios'.</msg>
-<status status="PASS" endtime="20200720 19:04:57.007" starttime="20200720 19:04:56.904"></status>
+<msg timestamp="20200721 13:56:33.989" level="INFO">Selecting '16' from radio button 'optionsRadios'.</msg>
+<status status="PASS" endtime="20200721 13:56:34.098" starttime="20200721 13:56:33.988"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:57.007" starttime="20200720 19:04:56.904"></status>
+<status status="PASS" endtime="20200721 13:56:34.098" starttime="20200721 13:56:33.988"></status>
 </kw>
 <kw name="Input Role" library="form_resources">
 <arguments>
@@ -321,10 +321,10 @@
 <arg>RoleId</arg>
 <arg>${Role}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:57.009" level="INFO">Selecting options from selection list 'RoleId' by value 1.</msg>
-<status status="PASS" endtime="20200720 19:04:57.098" starttime="20200720 19:04:57.008"></status>
+<msg timestamp="20200721 13:56:34.100" level="INFO">Selecting options from selection list 'RoleId' by value 1.</msg>
+<status status="PASS" endtime="20200721 13:56:34.188" starttime="20200721 13:56:34.099"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:57.098" starttime="20200720 19:04:57.008"></status>
+<status status="PASS" endtime="20200721 13:56:34.188" starttime="20200721 13:56:34.098"></status>
 </kw>
 <kw name="Input Email" library="form_resources">
 <arguments>
@@ -336,10 +336,10 @@
 <arg>name:Email</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:57.099" level="INFO">Typing text 'customer@mail.com' into text field 'name:Email'.</msg>
-<status status="PASS" endtime="20200720 19:04:57.369" starttime="20200720 19:04:57.099"></status>
+<msg timestamp="20200721 13:56:34.190" level="INFO">Typing text 'customer@mail.com' into text field 'name:Email'.</msg>
+<status status="PASS" endtime="20200721 13:56:34.392" starttime="20200721 13:56:34.189"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:57.369" starttime="20200720 19:04:57.098"></status>
+<status status="PASS" endtime="20200721 13:56:34.392" starttime="20200721 13:56:34.188"></status>
 </kw>
 <kw name="Input Cell" library="form_resources">
 <arguments>
@@ -351,17 +351,17 @@
 <arg>name:Mobilephone</arg>
 <arg>${Cell}</arg>
 </arguments>
-<msg timestamp="20200720 19:04:57.371" level="INFO">Typing text '83444' into text field 'name:Mobilephone'.</msg>
-<status status="PASS" endtime="20200720 19:04:57.578" starttime="20200720 19:04:57.370"></status>
+<msg timestamp="20200721 13:56:34.394" level="INFO">Typing text '83444' into text field 'name:Mobilephone'.</msg>
+<status status="PASS" endtime="20200721 13:56:34.544" starttime="20200721 13:56:34.393"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:57.578" starttime="20200720 19:04:57.369"></status>
+<status status="PASS" endtime="20200721 13:56:34.544" starttime="20200721 13:56:34.393"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<status status="PASS" endtime="20200720 19:04:57.581" starttime="20200720 19:04:57.578"></status>
+<status status="PASS" endtime="20200721 13:56:34.547" starttime="20200721 13:56:34.545"></status>
 </kw>
 <kw name="Save User" library="form_resources">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -369,31 +369,31 @@
 <arguments>
 <arg>css:body &gt; div.modal.ng-scope &gt; div.modal-footer &gt; button.btn.btn-success</arg>
 </arguments>
-<msg timestamp="20200720 19:04:57.582" level="INFO">Clicking element 'css:body &gt; div.modal.ng-scope &gt; div.modal-footer &gt; button.btn.btn-success'.</msg>
-<status status="PASS" endtime="20200720 19:04:57.697" starttime="20200720 19:04:57.582"></status>
+<msg timestamp="20200721 13:56:34.548" level="INFO">Clicking element 'css:body &gt; div.modal.ng-scope &gt; div.modal-footer &gt; button.btn.btn-success'.</msg>
+<status status="PASS" endtime="20200721 13:56:34.641" starttime="20200721 13:56:34.547"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:57.697" starttime="20200720 19:04:57.581"></status>
+<status status="PASS" endtime="20200721 13:56:34.642" starttime="20200721 13:56:34.547"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
 <arg>../Screenshots/Completed.png</arg>
 </arguments>
-<msg timestamp="20200720 19:04:57.863" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/Completed.png"&gt;&lt;img src="../Screenshots/Completed.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20200720 19:04:57.863" starttime="20200720 19:04:57.698"></status>
+<msg timestamp="20200721 13:56:35.013" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/Completed.png"&gt;&lt;img src="../Screenshots/Completed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200721 13:56:35.013" starttime="20200721 13:56:34.642"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:57.864" starttime="20200720 19:04:56.204"></status>
+<status status="PASS" endtime="20200721 13:56:35.014" starttime="20200721 13:56:33.307"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:57.864" critical="yes" starttime="20200720 19:04:56.203"></status>
+<status status="PASS" endtime="20200721 13:56:35.014" critical="yes" starttime="20200721 13:56:33.306"></status>
 </test>
 <kw type="teardown" name="Close Open Browser" library="form_resources">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200720 19:04:57.937" starttime="20200720 19:04:57.865"></status>
+<status status="PASS" endtime="20200721 13:56:35.083" starttime="20200721 13:56:35.017"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:57.937" starttime="20200720 19:04:57.865"></status>
+<status status="PASS" endtime="20200721 13:56:35.084" starttime="20200721 13:56:35.017"></status>
 </kw>
-<status status="PASS" endtime="20200720 19:04:57.937" starttime="20200720 19:04:49.743"></status>
+<status status="PASS" endtime="20200721 13:56:35.084" starttime="20200721 13:56:23.466"></status>
 </suite>
 <statistics>
 <total>
@@ -403,10 +403,10 @@
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="TC2" pass="2">TC2</stat>
+<stat fail="0" id="s1" name="TC2 AddUserWithCSV" pass="2">TC2 AddUserWithCSV</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20200720 19:04:56.203" level="WARN">Multiple test cases with name 'Add User 1' executed in test suite 'TC2'.</msg>
+<msg timestamp="20200721 13:56:33.306" level="WARN">Multiple test cases with name 'Add User 1' executed in test suite 'TC2 AddUserWithCSV'.</msg>
 </errors>
 </robot>
