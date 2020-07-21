@@ -1,8 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
 Resource  ../Resources/form_resources.robot
-Library  DataDriver     ../TestData/UserDetails.csv
-
 
 Suite Setup     Open Chrome Browser
 Suite Teardown      Close Open Browser
