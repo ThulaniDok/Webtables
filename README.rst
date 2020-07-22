@@ -1,12 +1,11 @@
-====================================================
+==========================================================
 Webtables testing with Robot Framework and SeleniumLibrary
-====================================================
+==========================================================
 
 `Robot Framework`_ is a generic open source test automation framework and
 SeleniumLibrary_ is one of the many test libraries that can be used with
-it. In addition to showing how they can be used together for web testing,
-this demo introduces the basic Robot Framework test data syntax, how tests
-are executed, and how logs and reports look like.
+it. Webtables is an application that allows for adding of users and their roles
+in the Webatables.
 
 .. contents:: **Contents:**
    :depth: 1
